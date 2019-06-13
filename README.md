@@ -1,3 +1,7 @@
+# Electron React Typescript Starter #
+Based on [paachu](https://medium.com/@impaachu) blog post [How to build a React based Electron app](https://medium.com/@impaachu/how-to-build-a-react-based-electron-app-d0f27413f17f), Thank You
+
+# Offical 'create-react-app' Docs #
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

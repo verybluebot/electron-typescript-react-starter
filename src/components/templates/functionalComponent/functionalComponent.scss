@@ -1,0 +1,10 @@
+@import '../../../styles/colors';
+
+.functional-component-wrapper {
+  background-color: $mmuze-logo;
+  width: 130px;
+
+  p {
+    color: $mmuze-white;
+  }
+}

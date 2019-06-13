@@ -1,0 +1,21 @@
+@import '../../../styles/colors';
+
+.class-component-wrapper {
+  padding: 10px 15px;
+  background-color: $mmuze-logo;
+
+  &.pressed {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    cursor: pointer;
+    padding: 15px 20px;
+  }
+
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

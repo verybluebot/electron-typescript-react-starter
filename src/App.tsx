@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+
+// components
+import { MainScreen, SecondScreen } from './screens';
+
+// styles
 import './app.scss';
 
 const App: React.FC = () => {
-  return (
-    <div className="app">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p>
-         hello there! Im Montserrat thin font
-        </p>
-        <a
-          className="app-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <div className="app-wrapper">
+            <HashRouter>
+                <div className="app-container">
+                    <Switch>
+                        <Route exact path="/" component={MainScreen} />
+                        <Route exact path="/second-screen" component={SecondScreen} />
+                        <Route component={MainScreen} />
+                    </Switch>
+                </div>
+            </HashRouter>
+        </div>
+    );
+};
 
 export default App;
